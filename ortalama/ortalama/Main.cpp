@@ -1046,7 +1046,7 @@ int main() {
 	}
 	return 0;
 }*/
-
+/*
 int topl(int x[][3], int y) {
 	int top = 0;
 	for (int i = 0; i < y; i++)
@@ -1065,7 +1065,7 @@ int main() {
 	cout << "u matrisimin elemanlar toplami: " << topl(u, 2) << endl;
 
 	return 0;
-}
+}*/
 /*
 int main() {
 	int t[3][3] = { {5,3,2},{2,4,6},{1,5,8} };
