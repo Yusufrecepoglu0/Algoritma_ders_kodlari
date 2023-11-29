@@ -53,7 +53,7 @@ int main() {
 float a, i, n, p;
 	cout << "Ana para miktarini giriniz";
 	cin >> a;
-	cout << "faiz y�zdesini giriniz";
+	cout << "faiz yuzdesini giriniz";
 	cin >> i;
 	cout << "Gecen zamani giriniz";
 	cin >> n;
@@ -184,7 +184,7 @@ x:
 	a = a + (b / b + 1);
 	b += 2;
 	if (b <= 400) goto x;
-	cout << "Toplam�n�z: " << a << endl;
+	cout << "Toplaminiz: " << a << endl;
 }*/
 /*
 int main() {
@@ -389,7 +389,7 @@ int main() {
 /*
 int main() {
 	float r, sonuc, pi = 3.14;
-	cout << "Dairenin yari �apini giriniz: ";
+	cout << "Dairenin yari capini giriniz: ";
 	cin >> r;
 	sonuc = 2 * pi * pow(r, 2);
 	cout << "sonucunuz: " << sonuc;
@@ -484,7 +484,7 @@ int main() {
 /*
 int main() {
 
-	int dizi[2][3] = { {21, 34, 42},        // dizi[sat�r say�s�][sat�rdaki i�erik say�s�]
+	int dizi[2][3] = { {21, 34, 42},        // dizi[satir sayisi][satirdaki icerik sayisi]
 					   {22, 35, 47} };
 
 	for (int i = 0; i < 2; i++) {
@@ -546,7 +546,7 @@ int findLCM(int a, int b) {
 }
 
 int main() {
-	int x= 1033, xx, t, m, r,u,�,o;
+	int x= 1033, xx, t, m, r,u,p,o;
 	string yy, y = "yusufrecepoglu";
 	cout << "1) Giris\n2)Cikis";
 	cin >> t;
@@ -563,15 +563,15 @@ int main() {
 			{
 			case 1:
 				cout << "4 sayi giriniz: ";
-				cin >> r >> u >> � >> o;
+				cin >> r >> u >> p >> o;
 				int enbuyuk = r;
 				if (u>enbuyuk)
 				{
 					enbuyuk = u;
 				}
-				if (�>enbuyuk)
+				if (p>enbuyuk)
 				{
-					enbuyuk = �;
+					enbuyuk = p;
 				}
 				if (o>enbuyuk)
 				{
@@ -581,15 +581,15 @@ int main() {
 				break;
 			case 2:
 				cout << "4 sayi giriniz: ";
-				cin >> r >> u >> � >> o;
+				cin >> r >> u >> p >> o;
 				int enkucuk = r;
 				if (u < enkucuk)
 				{
 					enkucuk = u;
 				}
-				if (� < enkucuk)
+				if (p < enkucuk)
 				{
-					enkucuk = �;
+					enkucuk = p;
 				}
 				if (o < enkucuk)
 				{
@@ -600,18 +600,18 @@ int main() {
 
 			case 3:
 				cout << "EBOB'u alinicak sayiyilari giriniz: ";
-				cin >> r >> u >> � >> o;
+				cin >> r >> u >> p >> o;
 				int ebob1 = findGCD(r, u);
-				int ebob2 = findGCD(ebob1, �);
+				int ebob2 = findGCD(ebob1, p);
 				int ebob3 = findGCD(ebob2, o);
 				cout << "EBOB = " << ebob3;
 				break;
 
 			case 4:
 				cout << "EKOK'u alinicak sayiyilari giriniz: ";
-				cin >> r >> u >> � >> o;
+				cin >> r >> u >> p >> o;
 				int gcd1 = findGCD(r, u);
-				int gcd2 = findGCD(�, o);
+				int gcd2 = findGCD(p, o);
 				int lcm = findLCM(gcd1, gcd2);
 				cout << "EKOK= " << lcm;
 				break;
@@ -667,12 +667,12 @@ int main() {
 				switch (m) {
 				case 1: {
 					cout << "4 sayi giriniz: ";
-					int r, u, �, o;
-					cin >> r >> u >> � >> o;
+					int r, u, p, o;
+					cin >> r >> u >> p >> o;
 
 					int enbuyuk = r;
 					if (u > enbuyuk) enbuyuk = u;
-					if (� > enbuyuk) enbuyuk = �;
+					if (p > enbuyuk) enbuyuk = p;
 					if (o > enbuyuk) enbuyuk = o;
 
 					cout << "En buyuk sayi: " << enbuyuk << endl;
@@ -681,12 +681,12 @@ int main() {
 
 				case 2: {
 					cout << "4 sayi giriniz: ";
-					int r, u, �, o;
-					cin >> r >> u >> � >> o;
+					int r, u, p, o;
+					cin >> r >> u >> p >> o;
 
 					int enkucuk = r;
 					if (u < enkucuk) enkucuk = u;
-					if (� < enkucuk) enkucuk = �;
+					if (p < enkucuk) enkucuk = p;
 					if (o < enkucuk) enkucuk = o;
 
 					cout << "En kucuk sayi: " << enkucuk << endl;
@@ -695,11 +695,11 @@ int main() {
 
 				case 3: {
 					cout << "EBOB'u alinicak sayiyilari giriniz: ";
-					int r, u, �, o;
-					cin >> r >> u >> � >> o;
+					int r, u, p, o;
+					cin >> r >> u >> p >> o;
 
 					int ebob1 = findGCD(r, u);
-					int ebob2 = findGCD(ebob1, �);
+					int ebob2 = findGCD(ebob1, p);
 					int ebob3 = findGCD(ebob2, o);
 
 					cout << "EBOB = " << ebob3 << endl;
@@ -708,11 +708,11 @@ int main() {
 
 				case 4: {
 					cout << "EKOK'u alinicak sayiyilari giriniz: ";
-					int r, u, �, o;
+					int r, u, p, o;
 					cin >> r >> u >> � >> o;
 
 					int gcd1 = findGCD(r, u);
-					int gcd2 = findGCD(�, o);
+					int gcd2 = findGCD(p, o);
 					int lcm = findLCM(gcd1, gcd2);
 
 					cout << "EKOK= " << lcm << endl;
@@ -823,14 +823,14 @@ int main() {
 /*
 int main() {
 	int a[4][4] = { {5,8,1,2},{7,9,11,13},{2,7,6,4},{13,1,5,8} };
-	int estop = 0, dk�arp = 1;
+	int estop = 0, dkcarp = 1;
 	for (int i = 0; i < 4; i++)
 	{
 		estop += a[i][i];
-		dk�arp *= a[3-j][j];
+		dkcarp *= a[3-j][j];
 	}
 	cout << "a matrisinin esas kosegen elemanlari toplami: " << estop << endl;
-	cout << "a matrisinin diger kosegen elemanlari carpimi: " << dk�arp << endl;
+	cout << "a matrisinin diger kosegen elemanlari carpimi: " << dkcarp << endl;
 }*/
 /*
 int ntop(int x) {
@@ -1121,9 +1121,9 @@ int main() {
 	setlocale(LC_ALL, "Turkish");
 	cout << " Ebob hesaplama programina hosgeldiniz" << endl;
 	int a, b, ebob;
-	cout << " Ebobunu hesaplamak istedi�iniz 1. sayiyi giriniz = ";
+	cout << " Ebobunu hesaplamak istediginiz 1. sayiyi giriniz = ";
 	cin >> a;
-	cout << " Ebobunu hesaplamak istedi�iniz 2. sayiyi giriniz = ";
+	cout << " Ebobunu hesaplamak istediginiz 2. sayiyi giriniz = ";
 	cin >> b;
 	if (a < b)
 	{
