@@ -1159,3 +1159,392 @@ int main() {
 		i++;
 	}
 }*/
+/*
+int main() {
+	int girilicekSayi;
+	cout << "Kac sayi girilicek: ";
+	cin >> girilicekSayi;
+	int *p = new int[girilicekSayi];
+	for (int i = 0; i <girilicekSayi ; i++)
+	{
+		cout << "Sayi giriniz: ";
+		cin >> p[i];
+		if (p[i]%2==0)
+		{
+			cout << p[i] << "sayisi cift!" << endl;
+		}
+		else
+		{
+			cout << p[i] << "sayisi tek!" << endl;
+		}
+	}
+	cout << "Simdiye kadar girilen sayilar:\n{ ";
+	for (int j = 0; j < girilicekSayi; j++)
+	{
+		if (j==girilicekSayi-1)
+		{
+			cout << p[j] << " }";
+		}
+		else
+		{
+			cout << p[j] << ", ";
+		}
+	}
+	return 0;
+}*/
+/*
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	cout << " Ebob hesaplama programina hosgeldiniz" << endl;
+	int a, b, ebob;
+	cout << " Ebobunu hesaplamak istedi iniz 1. sayiyi giriniz = ";
+	cin >> a;
+	cout << " Ebobunu hesaplamak istedi iniz 2. sayiyi giriniz = ";
+	cin >> b;
+	if (a < b)
+	{
+		for (int i = 1; i <= b; i++)
+		{
+			if (a % i == 0 && b % i == 0)
+			{
+				ebob = i;
+
+			}
+		}
+	}
+	else if (b < a)
+	{
+		for (int i = 1; i <= a; i++)
+		{
+			if (a % i == 0 && b % i == 0)
+			{
+				ebob = i;
+			}
+		}
+	}
+	cout << "ebob = " << ebob;
+
+	return 0;
+}*/
+/*
+int main() {
+	int i = 0;
+	for  (;;)
+	{
+		cout << i << " ";
+		i++;
+	}
+}*/
+/*
+int main() {
+	float vizeNot, finalNot, ort;
+	cout << "Vize notunuzu giriniz: ";
+	cin >> vizeNot;
+	cout << "Final notunuzu giriniz: ";
+	cin >> finalNot;
+	ort = (vizeNot * 0.4) + (finalNot * 0.6);
+	if (finalNot<60)
+	{
+		cout << "Sinifta kaldiniz!!!";
+	}
+	if (ort>=60 && finalNot>=60)
+	{
+		cout << "Sinifi gectiniz!!!";
+	}
+
+	return 0;
+}*/
+/*
+int main(){
+	int sayi, sonuc;
+	cout << "Birden kaca kadar toplansin: ";
+	cin >> sayi;
+	sonuc = (sayi * (sayi + 1)) / 2;
+	cout << "Sonucunuz: " << sonuc;
+	return 0;
+}*/
+/*
+int main() {
+	double x;
+	cout << "Karekok'u hesaplanacak sayi: ";
+	cin >> x;
+	cout << "Cevap: " << sqrt(x);
+	return 0;
+}*/
+/*
+int dortgenAlan(int x, int y) {
+	int alan = x * y;
+	return alan;
+}
+int dortgenCevre(int x, int y) {
+	int cevre = (x + y) * 2;
+	return cevre;
+}
+int main() {
+	int a, b;
+	cout << "Dikdortgenin kenarlarini giriniz: ";
+	cin >> a >> b;
+	cout << "Dikdortgenin alani " << dortgenAlan(a, b) << "\nDikdortgenin cevresi " << dortgenCevre(a, b);
+}*/
+/*
+int main() {
+	int x;
+	cout << "Kac sayi girilicek: ";
+	cin >> x;
+	int* dizi = new int[x];
+	int* dizicift = new int[x];
+	int* dizitek = new int[x];
+	for (int i = 0; i < x; i++)
+	{
+		cout << "Dizinin " << i << ". elemanini giriniz: ";
+		cin >> dizi[i];
+	}
+	for (int i = 0; i < x; i++)
+	{
+		if (dizi[i] % 2 == 0) {
+			cout << "Dizinin " << i << ". elemani cift sayi" << endl;
+			int j = 0;
+			dizicift[j] = dizi[i];
+			j++;
+		}
+		else
+		{
+			cout << "Dizinin " << i << ". elemani tek sayi" << endl;
+			int k = 0;
+			dizicift[k] = dizi[i];
+			k++;
+		}
+	}
+}*/
+/*
+int main() {
+	double a = 1, b = 1, c;
+	cout << "Fibonacci dizisinin ilk 50 elemani soyledir: \n";
+	cout << a << " " << b << " ";
+	for (int i = 0; i < 48; i++)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		cout << c << " ";
+	}
+	return 0;
+}*/
+/*
+int main() {
+	int dizi[3][3] = { {1,2,3},{4,5,6},{7,8,9} };
+	int top = 0, carp = 1;
+	for (int i = 0; i < 3; i++)
+	{
+		top += dizi[i][i];
+		carp *= dizi[2 - i][i];
+	}
+	cout << "Esas kosegen toplami: " << top << endl;
+	cout << "Diger kosegen carpimi: " << carp << endl;
+	return 0;
+}*/
+/*
+//1.sinav sorusu;
+int main() {
+	int t[2][3] = { {2,5,7},{12,6,4} };
+	float top = 0, ort;
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			top += t[i][j];
+		}
+	}
+	ort = top / 6.0;
+	cout << ort;
+	return 0;
+}*/
+/*
+// 2. sinav sorusu;
+int main() {
+	float a, b, c, d, e, x;
+	cout << "x= " << endl;
+	cin >> x;
+	a = pow(x, 3) + 1;
+	b = pow(1 + 1.0 / a, 1.0 / 5);
+	c = sin(x * x + 1);
+	d = log(x * x + 1);
+	e = b / c * c + d;
+	cout << e << endl;
+	return 0;
+}*/
+/*
+int main() {
+	double a, b, c, d, x, y;
+	cout << "x = " << endl;
+	cin >> x;
+	a = pow(x + 1, 1.0 / 4);
+	b = pow(2 + 1 / a, 1.0 / 4);
+	c = log(x * x + 1);
+	d = pow(x + 2, 1.0 / 5);
+	y = b / (c - d);
+	cout << y << endl;
+	return 0;
+}*/
+/*
+//c)
+int main() {
+	int top = 0;
+	for (int i = 1; i <= 21; i+=2)
+	{
+		top += pow(i, 3);
+	}
+	cout << "Toplaminiz: " << top;
+	return 0;
+}*/
+/*
+//b)
+int main() {
+	int top = 0, sayac = 1;
+	while (sayac<=21)
+	{
+		top += pow(sayac, 3);
+		sayac += 2;
+	}
+	cout << "Toplaminiz: " << top;
+	return 0;
+}*/
+/*
+//a)
+int main() {
+	int top = 0, x = 1;
+	a:
+	if (x<=21)
+	{
+		top += pow(x, 3);
+		x += 2;
+		goto a;
+	}
+
+	cout << "Toplaminiz: " << top;
+	return 0;
+}*/
+/*
+int main() {
+	int t[2][3] = { {37,46,3},{53,9,41} };
+	int enbuyuk, enkucuk;
+	enbuyuk = t[0][0];
+	enkucuk = t[0][0];
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			if (enbuyuk<t[i][j])
+			{
+				enbuyuk = t[i][j];
+			}
+			if (enkucuk>t[i][j])
+			{
+				enkucuk = t[i][j];
+			}
+		}
+	}
+	cout << "t matrisinin en buyuk elemani " << enbuyuk << endl;
+	cout << "t matrisinin en kucuk elemani " << enkucuk << endl;
+	return 0;
+}*/
+/*
+//En kucuk 2. elemani bulma;
+int main() {
+	int t[2][4] = { {46,3,5,8},{17,6,77,9} };
+	int enKucuk = t[0][0], enKucuk2 = t[0][0];
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			if (enKucuk>t[i][j])
+			{
+				enKucuk2 = enKucuk;
+				enKucuk = t[i][j];
+			}
+			else if (enKucuk2 > t[i][j] && t[i][j] != enKucuk) {
+				enKucuk2 = t[i][j];
+			}
+		}
+	}
+	cout << "Matrisin en kucuk elemani: " << enKucuk << endl;
+	cout << "Matrisin en kucuk 2. elamani: " << enKucuk2 << endl;
+	return 0;
+}*/
+/*
+//2! 4! 6! .... 16! diye giden 2x4 matrisi otomatik yazdırma;
+double fakt(double x) {
+	double f = 1;
+	for (int i = 1;  i <= x;  i++)
+	{
+		f *= i;
+	}
+	return f;
+}
+
+int main() {
+	double t[2][4], x = 2;
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 4; j++) {
+			t[i][j] = fakt(x);
+			x += 2;
+		}
+	}
+
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 4; j++) {
+			if (i==0 && j==0)
+			{
+				cout << "t diziniz:\nt={ " << t[i][j];
+			}
+			else if (i==1 && j==3)
+			{
+				cout << " " << t[i][j] << " }";
+			}
+			else
+			{
+			cout << " " << t[i][j];
+			}
+
+		}
+		cout << endl;
+	}
+	return 0;
+}*/
+/*
+//1>5,1>7,1>9...1>15 toplamlarinin eleman oldugu matris;
+int main() {
+	double t[2][3], x = 5;
+
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			int top = 0;
+			for (int k = 1; k <= x; k++)
+			{
+				top += k;
+			}
+			t[i][j] = top;
+			x += 2;
+		}
+	}
+
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			if (i == 0 && j == 0)
+			{
+				cout << "t diziniz:\nt={ " << t[i][j];
+			}
+			else if (i == 1 && j == 2)
+			{
+				cout << " " << t[i][j] << " }";
+			}
+			else
+			{
+				cout << " " << t[i][j];
+			}
+
+		}
+		cout << endl << "   ";
+	}
+}*/
