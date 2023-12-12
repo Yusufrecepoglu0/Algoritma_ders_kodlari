@@ -1548,3 +1548,217 @@ int main() {
 		cout << endl << "   ";
 	}
 }*/
+
+
+/*
+int main() {
+	int t[2][4] = { { 5,3,2,7 }, {12,6,5,4} };
+	int satir, sutun, enKucuk = t[0][0];
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			if (enKucuk>t[i][j])
+			{
+				enKucuk = t[i][j];
+				satir = i, sutun = j;
+			}
+		}
+	}
+	cout << "En kucuk sayi " << enKucuk << endl;
+	enKucuk = t[0][0];
+	t[satir][sutun] = 100000;
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++) {
+			if (enKucuk > t[i][j])
+			{
+				enKucuk = t[i][j];
+			}
+		}
+	}
+	cout << "En kucuk 2. sayi " << enKucuk << endl;
+	return 0;
+}*/
+/*
+int main() {
+	int matris[5][5];
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++) {
+			matris[i][j]=i+j;
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++) {
+			cout << matris[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}*/
+/*
+double kupHesap(double x) {
+	return(pow(x,3));
+}
+void kup() {
+	double sayi, sonuc;
+	cin >> sayi;
+	sonuc = pow(sayi, 3);
+	cout << sayi << " sayisinin kupu: " << sonuc << endl;
+}
+
+double kupHesap2() {
+	int x;
+	cout << "Sayi giriniz: ";
+	cin >> x;
+	return(pow(x, 3)) ;
+}
+
+int main() {
+	
+	cout << kupHesap(x) << endl;
+
+	kup();
+
+	return 0;
+}*/
+/*
+double kare(int x) {
+	double sonuc;
+	sonuc = pow(x, 2);
+	return sonuc;
+}
+double kup(int x) {
+	double sonuc;
+	sonuc = pow(x, 3);
+	return sonuc;
+}
+
+int main() {
+	int sayi;
+	cout << "Sayi giriniz: ";
+	cin >> sayi;
+	if (sayi % 2 == 0)
+		cout << kare(sayi);
+	else
+		cout << kup(sayi);
+
+	return 0;
+}*/
+/*
+double top(int x, int y) {
+	double sonuc;
+	sonuc = x + y;
+	return sonuc;
+}
+
+double cikar(int x, int y) {
+	double sonuc;
+	sonuc = x - y;
+	return sonuc;
+}
+
+double carp(int x, int y) {
+	double sonuc;
+	sonuc = x * y;
+	return sonuc;
+}
+
+double bol(int x, int y) {
+	double sonuc;
+	sonuc = x / y;
+	return sonuc;
+}
+
+int main() {
+	int sayi1, sayi2, secim;
+	cout << "Sayi 1 ve sayi 2 yi giriniz: ";
+	cin >> sayi1 >> sayi2;
+	cout << "Yapmak istediginiz islemin numarasini giriniz.\n1)+\n2-)-\n3-)*\n4-)/" << endl;
+	cin >> secim;
+	switch (secim)
+	{
+	case(1):
+		cout << top(sayi1, sayi2) << endl;
+		break;
+	case(2):
+		cout << cikar(sayi1, sayi2) << endl;
+		break;
+	case(3):
+		cout << carp(sayi1, sayi2) << endl;
+		break;
+	case(4):
+		cout << bol(sayi1, sayi2) << endl;
+		break;
+	default:
+		break;
+	}
+}*/
+/*
+void fibonacciSeri() {
+	double fibonacciSer, z=0, y=1,sayi;
+	cout << "Sayi giriniz: ";
+	cin >> sayi;
+	cout << z << endl << y << endl;
+
+	for (int i = 0; i < sayi-2; i++)
+	{
+		fibonacciSer = z + y;
+		z = y;
+		y = fibonacciSer;
+		cout << fibonacciSer << endl;
+	}
+}
+
+void fibonacci() {
+	double fibonacciSer, z = 0, y = 1, sayi;
+	cout << "Sayi giriniz: ";
+	cin >> sayi;
+	for (int i = 2; i < sayi; i++)
+	{
+		fibonacciSer = z + y;
+		z = y;
+		y = fibonacciSer;
+	}
+	cout << fibonacciSer << endl;
+}
+
+void faktoriyel() {
+	double fakt = 1, sayi; 
+	cout << "Sayi giriniz: ";
+	cin >> sayi;
+	for (int i = 1; i <= sayi; i++)
+	{
+		fakt *= i;
+	}
+	cout << "Faktoriyeliniz: " << fakt << endl;
+	return ;
+}
+
+int main() {
+	int sayi, secim;
+	a:
+	cout << "Yapmak istediginiz islemi secin:\n1-)Fibonacci dizisini yazdirma.\n2-) Fibonacci dizisinin elemanini yazdima.\n3-) Faktoriyel alma." << endl;
+	cin >> secim;
+	if (secim==1)
+	{
+		fibonacciSeri();
+	}
+	else if(secim==2)
+	{
+		fibonacci();
+	}
+	else if (secim==3)
+	{
+		faktoriyel();
+	}
+	else
+	{
+		cout << "Yanlis secim yaptiniz!!!";
+		goto a;
+	}
+	return 0;
+}*/
